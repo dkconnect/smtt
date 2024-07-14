@@ -87,7 +87,7 @@ def predict_stock(ticker):
     return fig
 
 
-# Button to predict stock prices
+# This is button to predict stock prices.
 if st.button("Predict Stock Prices"):
     fig = predict_stock(ticker)
     st.plotly_chart(fig)
@@ -104,14 +104,15 @@ st.write("**Watchlist:**", st.session_state['watchlist'])
 
 # Function to get news articles related to the stock ticker
 def get_news(ticker):
-    api_key = "3b497bb115a140829ae78f4223188366"  # Replace with your actual API key
+    api_key = "____________________________________"  
+    # I have hidden my API key for security purposes. You can find your own API key at https://newsapi.org/ .
     url = f"https://newsapi.org/v2/everything?q={ticker}&apiKey={api_key}"
     response = requests.get(url)
     articles = response.json()["articles"]
     return articles
 
 
-# Button to show news articles
+# This is the button to show news articles using the API from https://newsapi.org/
 if st.button("Show News"):
     news = get_news(ticker)
     for article in news:
@@ -119,7 +120,6 @@ if st.button("Show News"):
         st.write(article['description'])
         st.write(f"[Read more]({article['url']})")
 
-# Add the footer
 st.markdown("---")
 st.markdown("© 2024 DK - Lucifer. All rights reserved.")
 st.markdown("[Visit my GitHub](https://github.com/dkconnect)")

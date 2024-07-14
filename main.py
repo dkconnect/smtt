@@ -122,6 +122,6 @@ if st.button("Show News"):
 # Add the footer
 st.markdown("---")
 st.markdown("© 2024 DK - Lucifer. All rights reserved.")
-st.markdown("[Visit my GitHub](https://github.com/your-github-username)")
-st.markdown("[Source](https://github.com/your-github-username)",
+st.markdown("[Visit my GitHub](https://github.com/dkconnect)")
+st.markdown("[Source](https://github.com/dkconnect/smtt)",
             unsafe_allow_html=True)

@@ -12,19 +12,19 @@
 
 # How to use the Application
 - Choose Index Fund
-- 
+  
 ![tt3](https://github.com/dkconnect/smtt/blob/main/images/choose%20index.png)
 
 - Choose Company from the list
-- 
+  
 ![ttt1](https://github.com/dkconnect/smtt/blob/main/images/choose%20company.png)
 
 - You will be able to see companies data - Date, Open, High, Close, Low, Volume along with the historical data of the stock
-- 
+  
 ![tt2](https://github.com/dkconnect/smtt/blob/main/images/stock%20and%20historical%20data.png)
 
 - You can also click on predict predict stock price button to see the actual and predicted data
-- 
+  
 ![tt2](https://github.com/dkconnect/smtt/blob/main/images/prediction.png)
 
 # Observation and Conclusion:

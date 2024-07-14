@@ -1,5 +1,6 @@
 # Stock Market Trading Tool
 Using Streamlib, Pandas, Numpy, Matplotlib etc.
+You can access the application from here - https://stock-market-trading-tool.onrender.com/
 
 # Dataset:
 You will find 2 datasets company_data.csv and index_fund_data.csv. The CSV files have list of companies, index fund, ticker and currency. 
@@ -8,22 +9,18 @@ You will find 2 datasets company_data.csv and index_fund_data.csv. The CSV files
 You can find the requirements in requirements.txt, I have used replit for development. 
 You need to install all the libraries and then get an API Key from newsapi.org
 
-![tt3](https://github.com/dkconnect/smtt/blob/main/choose%20company.png)
+# How to use the Application
+- Choose Index Fund
+![tt3](https://github.com/dkconnect/smtt/blob/main/images/choose%20index.png)
 
-# Test:
-Test accuracy metric is root mean square error (RMSE).
-# Results:
-The comparison of OHLC, HLC and Closing price:
+- Choose Company from the list
+![ttt1](https://github.com/dkconnect/smtt/blob/main/images/choose%20company.png)
 
-![ttt1](https://user-images.githubusercontent.com/24511419/29501710-76018bbe-864c-11e7-9239-afd8bbf19bb8.png)
+- You will be able to see companies data - Date, Open, High, Close, Low, Volume along with the historical data of the stock
+![tt2](https://github.com/dkconnect/smtt/blob/main/images/stock%20and%20historical%20data.png)
 
-After the training the fitted curve with original stock price:
-
-![tt2](https://user-images.githubusercontent.com/24511419/29501783-eb7eccd0-864c-11e7-9c26-0db07dea73c0.png)
+- You can also click on predict predict stock price button to see the actual and predicted data
+![tt2](https://github.com/dkconnect/smtt/blob/main/images/prediction.png)
 
 # Observation and Conclusion:
-Since difference among OHLC average, HLC average and closing value is not significat, so only OHLC average is used to build the model and prediction. The training and testing RMSE are: 1.24 and 1.37 respectively which is pretty good to predict future values of stock.
-Stock price of last day of dataset was 158.8745 and using this model and price of next two days are predicted as 160.3230 and 160.9240 - which were 159.2075 and 159.8325 on 14th and 15th August 2017 according to Yahoo Finance. However, future values for any time period can be predicted using this model.
-
-Finally, this work can greatly help the quantitative traders to take decisions.
-
+This model can be used by quantitative traders, stock market analyst and finance analyst to take decisions as this will help in predicting the stock data. 

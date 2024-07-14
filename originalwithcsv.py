@@ -12,12 +12,11 @@ company_data = pd.read_csv('company_data.csv', encoding='ISO-8859-1')
 # Create a mapping from company names to tickers
 company_to_ticker = dict(zip(company_data['Company'], company_data['Ticker']))
 
-# Function to get the ticker from either company name or ticker input
+# Function to get the ticker
 def get_ticker(input_value):
     input_value = input_value.strip().title()
     return company_to_ticker.get(input_value, input_value.upper())
 
-# Set the title of the app
 st.title("Real-Time Stock Market Tracker")
 
 # Create an input field for the company name or stock ticker
@@ -77,7 +76,7 @@ st.write("**Watchlist:**", st.session_state['watchlist'])
 
 # Function to get news articles related to the stock ticker
 def get_news(ticker):
-    api_key = "3b497bb115a140829ae78f4223188366"  # Replace with your actual API key
+    api_key = "_____________________________" 
     url = f"https://newsapi.org/v2/everything?q={ticker}&apiKey={api_key}"
     response = requests.get(url)
     articles = response.json()["articles"]
@@ -91,19 +90,6 @@ if st.button("Show News"):
         st.write(article['description'])
         st.write(f"[Read more]({article['url']})")
 
-# Add the footer
 st.markdown("---")
 st.markdown("© 2024 [Your Name]. All rights reserved.")
-st.markdown("[Visit my GitHub](https://github.com/your-github-username)")
-
-# Add the GitHub logo button
-st.markdown(
-    """
-    <a href="https://github.com/your-github-username" target="_blank">
-        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo" style="position: fixed; top: 10px; right: 10px; width: 50px; height: 50px;">
-    </a>
-    """,
-    unsafe_allow_html=True
-)
-
-# Make sure to replace "Your Name" and "https://github.com/your-github-username" with your actual name and GitHub URL.
+st.markdown("[Visit my GitHub](https://https://github.com/dkconnect)")
